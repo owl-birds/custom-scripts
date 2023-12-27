@@ -12,3 +12,12 @@ second_filepath="$2"
 # TEST
 echo "first filename : $first_filepath"
 echo "second filename : $second_filepath"
+
+# while read line; do
+# 	#Readind each line in sequence
+# 	echo $line
+# done <read_file.txt
+
+while read line; do
+	echo "$line"
+done < "$first_filepath"
