@@ -10,8 +10,8 @@ first_filepath="$1"
 second_filepath="$2"
 
 # TEST
-echo "first filepath : $first_filepath"
-echo "second filepath : $second_filepath"
+echo "first filename : $first_filepath"
+echo "second filename : $second_filepath"
 echo "----"
 
 
@@ -53,8 +53,6 @@ while read line; do
 done < "$second_filepath"
 
 echo "2-->"$sha256sum_2"-----------"
-
-echo "RESULT: "
 
 if [ $sha256sum_1 = $sha256sum_2 ]; then
 	echo "sha256sum are equal"
